@@ -18,7 +18,6 @@ class Database:
         result = self.cur.fetchall()
         return result
 
-@app.route('/')
 def users():
 
     def db_query():

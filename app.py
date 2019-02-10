@@ -14,6 +14,10 @@ def signup():
 def signin():
     return(render_template("signin.html"))
 
+@app.route('/bookpage')
+def bookpage():
+    return(render_template("bookpage.html"))
+
 @app.errorhandler(404)
 def pgntfnd(y):
     return(render_template("error404.html"))

@@ -22,6 +22,10 @@ def bookpage():
 def welcome():
     return(render_template("welcome.html"))
 
+@app.route('/book')
+def book():
+    return(render_template("book.html"))
+    
 @app.errorhandler(404)
 def pgntfnd(y):
     return(render_template("error404.html"))

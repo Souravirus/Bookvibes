@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+  <style>
+    body{
+      background-color: black;
+    }
+
+
+.clearfix {
+
+  border: 3px solid black;
+  padding: 5px;
+  margin-top: 130px;
+  height: 250px;
+  width: 400px;
+  background-color: gray;
+  margin-left: 320px;
+}
+.img2 {
+  float: right;
+}
+  </style>
+</head>
+
+
+<div class="clearfix">
+
+  <label for="bn" style="color:black">Book Name:&nbsp;</label>
+  <input type="text" id="bn" name="Book Name">
+  <br>
+  <br>
+  <label for="au" style="color:black">Author: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="au" name="Author">
+  <br><br>
+  <label for="yop" style="color:black">Publication Date:</label>
+  <input type="text" id="yop" name="Year of Publication">
+  <br><br>
+  <input type="submit" name="Add!" value="Add!" style="margin-left:160px">
+</div>
+
+
+{% endblock %}

@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 <head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <style>
   * {
     box-sizing: border-box;
+    }
+
+  body{
+      background-image: url("https://images.unsplash.com/photo-1419640303358-44f0d27f48e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+      background-size: cover;
     }
  .column {
    float: left;
@@ -57,26 +65,72 @@ function highremove(){
 <br>
 
 <div id="float1" style="width:25%;height:110px;border: 2px solid gray; background:gray;float:left;margin-left:130px;padding:20px">
-<p>Keep track of every book you have read (or just start from the day you join)</p>
+  <p>Keep track of every book you have read (or just start from the day you join)</p>
 </div>
 <div id="float2" style="width:25%;height:110px;border: 2px solid gray; background:gray;float:left;margin-left:20px;padding:20px">
-<p>Show some love for your favourite books,lists and review with a like. </p>
+  <p>Show some love for your favourite books,lists and review with a like. </p>
 </div>
 <div id="float3" style="width:25%;height:110px;border: 2px solid gray; background:gray;float:left;margin-left:20px;padding:20px">
-<p>Write and share rewiews and follow friends</p>
+  <p>Write and share rewiews and follow friends</p>
 </div>
 <br><br>
 <div id="float1" style="width:25%;height:110px;border: 2px solid gray; background:gray;float:left;margin-left:130px;margin-top:20px;padding:20px">
-<p>Rate each book on the scale of five to record and share your experience</p>
+  <p>Rate each book on the scale of five to record and share your experience</p>
 </div>
 <div id="float2" style="width:25%;height:110px;border: 2px solid gray; background:gray;float:left;margin-left:20px;margin-top:20px;padding:20px">
-<p>Keep a diary of books that you have read</p>
+  <p>Keep a diary of books that you have read</p>
 </div>
 <div id="float3" style="width:25%;height:110px;border: 2px solid gray; background:gray;float:left;margin-left:20px;margin-top:20px;padding:20px">
-<p>See the reviews of other people too about that book</p>
+  <p>See the reviews of other people too about that book</p>
 </div>
 <br><br><br><br><br><br><br><br>
-<p>jhj</p>
 
 
+<br><br><br>
+
+
+<footer class="section footer-classic context-dark bg-image" style="background: #708090;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p>We are an award-winning company, dedicated to spread knowledge in the workd.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Bookvibes</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>Central Block ,NIT Hamirpur, Hamirpur</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>Email:</dt>
+                <dd><a href="mailto:#">anmolgupta9557@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>Phones:</dt>
+                <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5 style = "margin-right:7px">Links </h5>
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>Twitter</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>Google</span></a></div>
+        </div>
+      </footer>
 {% endblock %}

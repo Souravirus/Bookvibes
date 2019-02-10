@@ -25,6 +25,12 @@ def welcome():
 @app.route('/book')
 def book():
     return(render_template("book.html"))
+
+@app.route('/search_res', methods = ['POST', 'GET'])
+def search_res():
+	result = request.form 
+	return(render_template("search_res.html", result=result))
+
     
 @app.errorhandler(404)
 def pgntfnd(y):

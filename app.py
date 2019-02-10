@@ -18,6 +18,10 @@ def signin():
 def bookpage():
     return(render_template("bookpage.html"))
 
+@app.route('/welcome')
+def welcome():
+    return(render_template("welcome.html"))
+
 @app.errorhandler(404)
 def pgntfnd(y):
     return(render_template("error404.html"))

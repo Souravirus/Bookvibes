@@ -1,6 +1,15 @@
 from flask import *
+import pymysql
 app= Flask(__name__)
 app.secret_key='mysecretkey'
+
+host="127.0.0.1"
+user="root"
+password=""
+db="bookvibes"
+con = pymysql.connect(host=host, user=user, password=password, db=db, cursorclass=pymysql.cursors.
+                                   DictCursor)
+cur=con.cursor()
 
 @app.route('/')
 def homepage():
@@ -28,8 +37,10 @@ def book():
 
 @app.route('/search_res', methods = ['POST', 'GET'])
 def search_res():
-	result = request.form 
-	return(render_template("search_res.html", result=result))
+	data = request.form['search']
+	cur.execute("select book1, book2, book3, book4, book5 from book where book_name='"+data+"'"+" limit 1")
+	result = cur.fetchall()
+	return(render_template("search_res.html", result=result, content_type='application/json'))
 
     
 @app.errorhandler(404)

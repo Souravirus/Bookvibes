@@ -1,13 +1,43 @@
-<!doctype html>
-<html>
-   <body>
-      <table border = 1>
-         {% for key, value in result.items() %}
-            <tr>
-               <th> {{ key }} </th>
-               <td> {{ value }} </td>
-            </tr>
-         {% endfor %}
-      </table>
-   </body>
-</html>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+    <meta charset="UTF-8">
+    <title>Employees</title>
+
+
+
+    {% if result %}
+    
+    {% for row in result %}
+    
+ 
+<table id="employees" style="width:100%"><tbody><tr>
+        <th>Book1</th>
+        <th>Book2</th>
+        <th>Book3</th>
+        <th>Book4</th>
+        <th>Book5</th>
+    </tr><tr>
+        <td> {{ row.book1 }}</td>
+        <td> {{ row.book2 }}</td>
+        <td> {{ row.book3 }}</td>
+        <td> {{ row.book4 }}</td>
+        <td> {{ row.book5 }}</td>
+    </tr></tbody></table>
+      {% endfor %}
+    {% endif %}
